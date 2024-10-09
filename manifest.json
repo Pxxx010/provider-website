@@ -1,0 +1,15 @@
+{
+    "name": "Gerenciador de Chamados",
+    "short_name": "gen_chamado",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#3e4eb8",
+    "icons": [
+        {
+            "src": "icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

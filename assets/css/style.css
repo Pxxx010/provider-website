@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 25px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 1000px; /* Limita a largura máxima do container */
+    width: 100%; /* Garante que o container ocupe 100% da largura disponível */
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input {
+    width: calc(100% - 22px); /* Ajusta a largura para evitar overflow */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding e border não ultrapassem a largura */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.chamado-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.chamado-card .card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.2em;
+}
+
+.chamado-card .card-body p {
+    margin: 8px 0;
+}
+
+.status-label {
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.status-label.aberto {
+    background-color: green;
+}
+
+.status-label.fechado {
+    background-color: red;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria três colunas de tamanho igual */
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-container > div {
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao redor dos itens */
+    background-color: #fff; /* Fundo branco para os cards */
+    border-radius: 5px; /* Cantos arredondados */
+    box-sizing: border-box; /* Garante que padding e borda são incluídos na largura total */
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}

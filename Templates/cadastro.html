@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Chamado</title>
+    <link rel="stylesheet" href="/assets/css/cadastro.css">
+</head>
+<body>
+    <!-- Conteúdo da página -->
+    <h1>Cadastrar Chamado</h1>
+    <form id="cadastrarChamadoForm">
+        <label for="cliente">Cliente:</label>
+        <input type="text" id="cliente" name="cliente" required><br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required><br><br>
+
+        <label for="categoriaId">Categoria:</label>
+        <input type="text" id="categoria" name="categoria" required><br><br>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" required></textarea><br><br>
+
+        <button type="submit">Cadastrar Chamado</button>
+    </form>
+
+    <script src="/assets/js/cadastro.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>W3c Telecom</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="/assets/img/letra-w.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="/assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">W3cTelecom</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Início<br></a></li>
+          <li><a href="about.html">Sobre Nós</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="/Templates/login.html">Acessar</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="/assets/img/world-dotted-map.png" alt="" class="hero-bg" data-aos="fade-in">
+
+      <div class="container">
+        <div class="row gy-4 d-flex justify-content-between">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h2 data-aos="fade-up">Verifique já nossa, disponibilidade</h2>
+            <p data-aos="fade-up" data-aos-delay="100" id="resultado_cep">Confira nossa área de atendimento com base no seu endereço</p>
+
+            <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+              <input type="text" class="form-control" placeholder="Seu CEP ou Cidade. Ex.: 52195350" id="cep">
+              <button type="submit" class="btn btn-primary" onclick="buscarEndereco()">Pesquisar</button>
+            </form>
+
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="300">
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="305" data-purecounter-duration="0" class="purecounter">305</span>
+                  <p>Clientes</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="0" class="purecounter">3</span>
+                  <p>Cidades</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="0" class="purecounter">24</span>
+                  <p>Suporte</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="0" class="purecounter">7</span>
+                  <p><Em>Equipe</Em></p>
+                </div>
+              </div><!-- End Stats Item -->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+            <img src="/assets/img/hero-img.svg" class="img-fluid mb-3 mb-lg-0" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-shield"></i></div>
+            <div>
+              <h4 class="title">Proteção a Ataque</h4>
+              <p class="description">Oferecemos máxima segurança para os seus dados e conexões. Nosso sistema avançado de proteção atua de forma preventiva, garantindo que sua experiência na internet seja segura e sem interrupções. Com a nossa proteção, você navega tranquilo, sabendo que está protegido contra possíveis ameaças.</p>
+              <a href="#" class="readmore stretched-link"><span>Saiba Mais</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-bars-progress"></i></div>
+            <div>
+              <h4 class="title">Latência Baixa</h4>
+              <p class="description">Nossas soluções de internet são desenvolvidas para garantir o menor tempo de resposta possível. A latência reduzida faz com que suas atividades online, como streaming, games e videoconferências, ocorram de maneira fluida e sem atrasos. Experimente a velocidade e estabilidade de uma internet pensada para você.</p>
+              <a href="#" class="readmore stretched-link"><span>Saiba Mais</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-phone-flip"></i></i></div>
+            <div>
+              <h4 class="title">Suporte 24H</h4>
+              <p class="description">Nosso time de suporte está disponível 24 horas por dia para atender a todas as suas necessidades. Seja para resolver problemas técnicos ou tirar dúvidas, estamos prontos para oferecer um atendimento rápido e eficiente, garantindo sua total satisfação com nossos serviços.</p>
+              <a href="#" class="readmore stretched-link"><span>Saiba Mais</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>Qualidade<br></span>
+        <h2>Qualidade</h2>
+        <p>O que podemos lhe oferecer?</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <div class="card-img">
+                <img src="/assets/img/IMG_1403.JPG" alt="" class="img-fluid">
+              </div>
+              <h3>Rapida Instalação</h3>
+              <p>Instalação rápida e eficiente de internet fibra ótica. Garantimos que sua conexão esteja disponível em tempo recorde, com qualidade e segurança, para você ficar conectado o quanto antes.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <div class="card-img">
+                <img src="/assets/img/IMG_1399.JPG" alt="" class="img-fluid">
+              </div>
+              <h3><a href="#" class="stretched-link">Equipe Qualificada</a></h3>
+              <p>Contamos com uma equipe qualificada e especializada em tecnologia de telecomunicações. Oferecemos suporte técnico de excelência para garantir uma conexão estável e rápida, atendendo todas as necessidades da sua casa ou empresa.
+              </p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="card-img">
+                <img src="/assets/img/IMG_1142.JPEG" alt="" class="img-fluid">
+              </div>
+              <h3><a href="#" class="stretched-link">Manutenção 24Hrs</a></h3>
+              <p>Monitoramento e manutenção 24 horas. Nossa equipe está sempre pronta para resolver qualquer problema técnico, garantindo que você tenha internet estável e de alta velocidade, a qualquer hora do dia.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="/assets/img/Dark Blue Internet Technology Presentation.png" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Entre em contato</h3>
+              <p>---</p>
+              <a class="cta-btn" href="#">Contato</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>Planos</span>
+        <h2>Planos</h2>
+        <p>Verifique nossos valores</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>50 Megas</h3>
+              <h4><sup>R$</sup>49,99<span> / Mês</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>--</span></li>
+                <li><i class="bi bi-check"></i> <span>--</span></li>
+                <li><i class="bi bi-check"></i> <span>--</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>--</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>--</span></li>
+              </ul>
+              <a href="#" class="buy-btn">Contrate Já</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <h3>150 Megas</h3>
+              <h4><sup>R$</sup>109,90<span> / Mês</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>--</span></li>
+                <li><i class="bi bi-check"></i> <span>--</span></li>
+                <li><i class="bi bi-check"></i> <span>--</span></li>
+                <li><i class="bi bi-check"></i> <span>--</span></li>
+                <li><i class="bi bi-check"></i> <span>--</span></li>
+              </ul>
+              <a href="#" class="buy-btn">Contrate Já</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>100 Megas</h3>
+              <h4><sup>R$</sup>89,90<span> / Mês</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>--</span></li>
+                <li><i class="bi bi-check"></i> <span>--</span></li>
+                <li><i class="bi bi-check"></i> <span>--</span></li>
+                <li><i class="bi bi-check"></i> <span>--</span></li>
+                <li><i class="bi bi-check"></i> <span>--</span></li>
+              </ul>
+              <a href="#" class="buy-btn">Contrate Já</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+
+      <img src="/assets/img/antecedentes-tecnicos-3860-x-2160-1l29np90hcci8axg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Edvaldo Gomes</h3>
+                <h4>Cliente</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Serviço de excelente qualidade! A internet é rápida e estável, e o suporte técnico é sempre muito atencioso e eficiente. Super recomendo!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Gustavo Oliveira</h3>
+                <h4>Cliente</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Melhor provedor da região! O serviço de internet é impecável e o atendimento ao cliente é rápido e eficaz. Estou muito satisfeito.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Felipe Alves</h3>
+                <h4>Cliente</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>A qualidade do serviço é incrível! Tenho uma conexão rápida e estável o tempo todo. O atendimento também é excelente, sempre me ajudam prontamente.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">W3cTelecom</span>
+          </a>
+          <p>Na W3C Telecom, nossa missão é oferecer soluções de internet de alta velocidade e confiabilidade, atendendo às suas necessidades de conexão com precisão e agilidade. Desde 2009, estamos comprometidos em fornecer serviços excepcionais, superando suas expectativas e garantindo uma experiência de navegação sem interrupções.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Links úteis</h4>
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="about.html">Sobre Nós</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#">Planos</a></li>
+            <li><a href="#">Consultoria</a></li>
+            <li><a href="#">Suporte 24hrs</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contato</h4>
+          <p>Rua Olimpio</p>
+          <p>Nova Descoberta, 52190-320</p>
+          <p>Brasil</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>(81)98735-3896</span></p>
+          <p><strong>Email:</strong> <span>w3ctelecom@gmail.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">W3cTelecom</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">        
+        Designed by <a href="https:bootstrapmade.com/">Afonso</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/cep.js"></script>
+
+      
+  <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+        .then(() => console.log('Service Worker registrado com sucesso.'))
+        .catch((error) => console.log('Falha ao registrar o Service Worker:', error));
+    }
+ </script>
+
+</body>
+
+</html>
